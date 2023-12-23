@@ -1,36 +1,37 @@
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import {Login} from "./Pages/Login";
+import {Dashboard} from "./Pages/Dashboard";
+import NotFound from "./Pages/NotFound";
+import Register from "./Pages/Register";
+import {GotoLogin} from "./Pages/GotoLogin";
+import {ForgotPassword} from "./Pages/ForgotPassword";
+import CheckUser from "./Pages/CheckUser";
+import About from "./Pages/About";
+import Settings from "./Pages/Settings";
 
-import './App.css';
-import SignIn from './components/pages/SignIn'
-import { BrowserRouter,Routes,Route} from 'react-router-dom';
-import Sidenav from './components/pages/Sidenav'
-import { About } from './components/pages/About';
-import { Settings } from './components/pages/Settings';
-import { Home } from './components/pages/Home';
-
-
-
-// const myStyle = {
-//   backgroundImage:
-//    "url('"https://unsplash.com/@sarahdorweiler?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sarah Dorweiler</a> on <a href="https://unsplash.com/photos/green-leafed-plant-on-clear-glass-vase-filled-with-water-x2Tmfd1-SgA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"')",
-//   height: "100vh",
-//   marginTop: "-70px",
-//   fontSize: "50px",
-//   backgroundSize: "cover",
-//   backgroundRepeat: "no-repeat",
-// };
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SignIn />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Settings" element={<Settings />} />
+         <Route path="/" element={<Login />} />
+         <Route path="/Dashboard" element={<Dashboard />} />
+         <Route path="/Register" element={<Register />} />
+         <Route path="/CheckUser" element={<CheckUser />} />
+         <Route path="/ForgotPassword" element={<ForgotPassword />} />
+         <Route path="/GotoLogin" element={<GotoLogin />} />
+         <Route path="/Settings" element={<Settings />} />
+         <Route path="/About" element={<About />} />
+         <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+        </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+
+
+
