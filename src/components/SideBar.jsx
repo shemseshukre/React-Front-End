@@ -119,7 +119,7 @@ export const SideBar = () =>{
                 >
                   <InboxIcon />
                 </ListItemIcon>
-                <ListItemText primary="About" sx={{ opacity: open ? 1 : 0 }} onClick={() => {navigate('/About')}}  />
+                <ListItemText primary="Products" sx={{ opacity: open ? 1 : 0 }} onClick={() => {navigate('/Products')}}  />
               </ListItemButton>
             </ListItem>
 

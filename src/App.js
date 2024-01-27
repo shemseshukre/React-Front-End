@@ -6,7 +6,7 @@ import Register from "./Pages/Register";
 import {GotoLogin} from "./Pages/GotoLogin";
 import {ForgotPassword} from "./Pages/ForgotPassword";
 import CheckUser from "./Pages/CheckUser";
-import About from "./Pages/About";
+import Products from "./Pages/Products";
 import Settings from "./Pages/Settings";
 
 
@@ -22,7 +22,7 @@ function App() {
          <Route path="/ForgotPassword" element={<ForgotPassword />} />
          <Route path="/GotoLogin" element={<GotoLogin />} />
          <Route path="/Settings" element={<Settings />} />
-         <Route path="/About" element={<About />} />
+         <Route path="/Products" element={<Products />} />
          <Route path="*" element={<NotFound />} />
         </Routes>
         </BrowserRouter>
